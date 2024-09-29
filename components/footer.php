@@ -23,6 +23,8 @@
 <script src="https://unpkg.com/embla-carousel-class-names/embla-carousel-class-names.umd.js"></script>
 <script src="https://unpkg.com/embla-carousel-autoplay/embla-carousel-autoplay.umd.js"></script>
 <script src="/public/js/emblaSlider.js"></script>
+<script src="/public/js/custom.js"></script>
+
 <script type="text/javascript">
    
 </script>

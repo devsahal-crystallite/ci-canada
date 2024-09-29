@@ -15,7 +15,9 @@
                             'Answer general questions with an assessment',
                             'Provide answers within 15 days',
                         ],
-                        'ctaTxt' => 'Get Started',
+                        'ctaTxt' => 'Get Pre-assessment',
+                        'showAdditionalPrice' => false, 
+                        'link' => '/',
                     ],
 
                     [
@@ -29,7 +31,9 @@
                             'Conclusion provided by a consultant',
                             'Check in agenda max. in 10 days',
                         ],
-                        'ctaTxt' => 'Get Started',
+                        'ctaTxt' => 'Make Appointment',
+                        'showAdditionalPrice' => true,  
+                        'link' => '30-minute-consultation-call',
                     ],
                     [
                         'price' => '$210 CAD ',
@@ -41,35 +45,43 @@
                             'Presentation of alternatives',
                             'Legal team analysis',
                             'Interview with a regulated agent',
-                            'Interview with a regulated agent',
                             'Strategy delivery',
                         ],
-                        'ctaTxt' => 'Get Started',
+                        'ctaTxt' => 'Make Appointment',
+                        'showAdditionalPrice' => false, 
+                        'link' => '30-minute-consultation-call',
                     ],
-
                 ];
 
                 foreach ($packages as $package) {
                     echo '<div class="col-lg-4 ">';
                     echo '<div class="__pacakgesColumn d-flex flex-column justify-content-between">';
                     echo '    <div class="d-flex flex-column align-items-start justify-content-start gap-3">';
-                    echo '        <h4>' . htmlspecialchars($package['price']) . '</h4>';
+                    echo '<div class="d-flex justify-content-between gap-3">';
+                    echo ' <h4>' . htmlspecialchars($package['price']) . '</h4>';
+
+                    // Conditional rendering for additional price
+                    if ($package['showAdditionalPrice']) {
+                        echo '<div class="d-flex flex-column justify-content-center gap-2"><strong>$250 CAD</strong></div>';
+                    }
+
+                    echo '</div>'; // Close the first div of the price
                     echo '        <span>' . htmlspecialchars($package['title']) . '</span>';
                     echo '        <p>' . htmlspecialchars($package['description']) . '</p>';
                     echo '        <ul>';
                     foreach ($package['details'] as $detail) {
-                        echo '            <li>' . htmlspecialchars($detail) . '</li>';
+                        echo '            <li class="d-flex align-items-center gap-3"> <img src="/public/images/check-circle-1.png" alt="">' . htmlspecialchars($detail) . '</li>';
                     }
                     echo '        </ul>';
-                    echo '    </div>';
-                    echo ' <a href="javascript:;" class="btn __packagesbtn ">';
+                    echo '    </div>'; // Close the details div
+                    echo ' <a href="' . htmlspecialchars($package['link']) . '" class="btn __packagesbtn ">';
                     echo '<div class="d-flex justify-content-between align-items-center gap-3">';
                     echo ' <span>' . htmlspecialchars($package['ctaTxt']) . ' </span>';
                     echo '<img src="/public/images/red-right.png" alt="" srcset="" width="16" height="16">';
                     echo ' </div>';
                     echo '</a>';
-                    echo '</div>';
-                    echo '</div>';
+                    echo '</div>'; // Close the __packagesColumn div
+                    echo '</div>'; // Close the column div
                 }
                 ?>
 

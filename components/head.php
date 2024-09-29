@@ -12,5 +12,8 @@
     <!-- Custom Css -->
     <link rel="stylesheet" href="/public/css/global.css">
     <link rel="stylesheet" href="/public/css/responsive.css">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/eacbe2a407.js" crossorigin="anonymous"></script>
 </head>
 <body>
