@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row align-items-start g-4 justify-content-center">
                 <div class="d-flex justify-content-center mb-3">
-                    <h2> Who is the 30 minute consultation for?</h3>
+                    <h2>  Who is the priority 1 hour consultation for?</h3>
 
                 </div>
                 <div class="col-md-6">

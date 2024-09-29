@@ -11,7 +11,7 @@
                             <img src="/public/images/icon-arrow-right.png" alt="" srcset="">
                         </div>
                     </a>
-                    <div class="d-flex flex-column flex-md-row flex-xl-column justify-content-between __heroName __fontbold gap-2">
+                    <div class="d-flex flex-column justify-content-between __heroName __fontbold gap-2">
                         <span class="font18 color-red">10,000+ Successfully Migrated  </span>
                         <span class="font18">100% Satisfaction Guaranteed</span>
                     </div>

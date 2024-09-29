@@ -5,7 +5,7 @@
                 <div class="d-flex justify-content-center flex-columns">
                     <h3>Happy Clients Now Living In Canada</h3>
                 </div>
-                <div class="col-12 my-5">
+                <div class="col-12">
                     <?php
                     $testimonials = [
                         [

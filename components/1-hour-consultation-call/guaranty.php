@@ -10,6 +10,7 @@
                         <div class="col-lg-8">
                             <h3>7 Days Guaranty</h3>
                             <p>If you haven't sat down with one of our agents within 7 days, you'll receive an immediate refund. No questions asked, just click and you'll get your money back.</p>
+                            <p><strong>Note:</strong> The guarantee is not subject to your immigration capabilities, but to the quality of our services.</p>
                         </div>
                     </div>
                 </div>

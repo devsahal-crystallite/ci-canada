@@ -1,7 +1,7 @@
 <section>
     <div class="__packages">
         <div class="container">
-            <div class="row g-3">
+            <div class="row g-4 align-items-center justify-content-center">
                 <div class="d-flex justify-content-center mb-5 __packagesHeading">
                     <h3>Let Jesus Hernández Fight For You</h3>
                 </div>
@@ -17,7 +17,7 @@
                         ],
                         'ctaTxt' => 'Get Pre-assessment',
                         'showAdditionalPrice' => false, 
-                        'link' => '/',
+                        'link' => 'pre-assessment',
                     ],
 
                     [
@@ -49,12 +49,12 @@
                         ],
                         'ctaTxt' => 'Make Appointment',
                         'showAdditionalPrice' => false, 
-                        'link' => '30-minute-consultation-call',
+                        'link' => '1-hour-consultation-call',
                     ],
                 ];
 
                 foreach ($packages as $package) {
-                    echo '<div class="col-lg-4 ">';
+                    echo '<div class="col-lg-4 col-md-6 ">';
                     echo '<div class="__pacakgesColumn d-flex flex-column justify-content-between">';
                     echo '    <div class="d-flex flex-column align-items-start justify-content-start gap-3">';
                     echo '<div class="d-flex justify-content-between gap-3">';
