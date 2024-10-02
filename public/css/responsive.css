@@ -1,99 +1,161 @@
-@media (max-width: 575.98px) {  
-
+@media (max-width: 1399.98px) {
+    .__hero .__heading {
+        font-size: 58px;
+        line-height: 1.3;
+        font-weight: 600;
+    }
+    .__pacakgesColumn h4 {
+        font-size: 24px;
+    }
+    .__pacakgesColumn span {
+        font-size: 25px;
+    }
 }
 
-@media (max-width: 767.98px) {
-    .__embla__slide {
-        flex: 0 0 100% !important;
+@media (max-width: 1199.98px) {
+    .__hero .__heading {
+        font-size: 48px;
+        line-height: 1.3;
+        font-weight: 600;
     }
-    .bg-red {
-        display: block !important;
-    }
-    .__30_hero .__heroName::before {
-        display: none !important;
-    }
-  }
 
-@media (max-width: 991.98px) { 
-    .__heroName{
+    .__experience .__expSection h3 {
+        color: var(--red);
+        font-size: 22px;
+        line-height: 1.3;
+    }
+
+    .__experience .__expSection p {
+        color: #fff;
+        font-size: 18px;
+        line-height: 1.3;
+    }
+
+    .__news {
+        padding: 120px 0px;
+        text-align: center;
+    }
+
+    .__news h3 {
+        font-size: 35px;
+    }
+
+    .__news p {
+        font-size: 16px;
+    }
+
+    .embla {
+        --slide-size: 33.33%;
+      }
+    .__pacakgesColumn {
+        min-height: 500px;
+        transition: all 0.5s ease-in-out;
+    }
+    .__pacakgesColumn ul {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .__heroName {
         position: relative;
         width: 60%;
         margin: 0 auto;
     }
-    .__hero{
+
+    .__hero {
         text-align: center;
     }
-    .__hero .__heading{
+
+    .__hero .__heading {
         font-size: 56px;
         line-height: 1.3;
     }
-    .__experience h2{
+
+    .__experience h2 {
         color: var(--red);
         font-size: 22px;
         line-height: 1.3;
         text-align: center;
     }
-    .__experience p{
+
+    .__experience p {
         color: #fff;
         font-size: 18px;
         line-height: 1.3;
     }
-    .__experience .__expSection h3{
+
+    .__experience .__expSection h3 {
         color: var(--red);
         font-size: 22px;
         line-height: 1.3;
     }
-    .__experience .__expSection p{
+
+    .__experience .__expSection p {
         color: #fff;
         font-size: 18px;
         line-height: 1.3;
     }
-    .__embla__slide {
-        flex: 0 0 50%;
-    }
+
+    .embla {
+        --slide-size: 50%;
+      }
+
     .__steps {
         padding: 50px 0px;
     }
-    .__steps{
+
+    .__steps {
         text-align: center;
     }
+
     .__steps span {
         font-size: 18px;
     }
+
     .__steps h3 {
         font-size: 35px;
     }
-    .__guaranty{
+
+    .__guaranty {
         text-align: center;
     }
+
     .__guaranty h3 {
         font-size: 35px;
         margin: 20px 0px;
     }
-    .__faqs{
+
+    .__faqs {
         padding: 40px 0px;
     }
+
     .__faqs h3 {
         text-align: center;
         font-size: 35px;
         margin: 20px 0px;
-    }    
+    }
+
     .__faqs h4 {
         font-size: 16px;
     }
-    .__30_hero{
+
+    .__30_hero {
         text-align: center;
     }
-    .__30_hero .__heading{
+
+    .__30_hero .__heading {
         font-size: 35px;
         line-height: 1.3;
         margin: 20px 0;
     }
+
     .__30_hero .__heroName {
         position: relative;
         width: 90%;
         margin-right: auto;
     }
+
     .__30_hero .__heroName::before {
         position: absolute;
         width: 2px;
@@ -103,50 +165,56 @@
         content: '';
         display: block;
     }
-    .__consultation {
-        padding:50px 0px;
-    }
-    .__consultation h2{
-        font-size:35px;
-    }
-    .__consultation h3{
-        font-size:18px;
-    }
-    .__consultation ul li{
-        font-size:16px;
-    }
-    .__testimonial h3, .__packages h3 {
-        font-size: 35px;
-        text-align: center;
-    }
- }
 
-@media (max-width: 1199.98px) { 
-    .__experience .__expSection h3{
-        color: var(--red);
-        font-size: 22px;
-        line-height: 1.3;
+    .__consultation {
+        padding: 50px 0px;
     }
-    .__experience .__expSection p{
-        color: #fff;
-        font-size: 18px;
-        line-height: 1.3;
-    }
-    .__news{
-        padding: 120px 0px;
-        text-align: center;
-    }
-    .__news h3{
+
+    .__consultation h2 {
         font-size: 35px;
     }
-    .__news p{
+
+    .__consultation h3 {
+        font-size: 18px;
+    }
+
+    .__consultation ul li {
         font-size: 16px;
     }
-    .__embla__slide {
-        flex: 0 0 40%;
+
+    .__testimonial h3,
+    .__packages h3 {
+        font-size: 35px;
+        text-align: center;
     }
- }
+    .__InnerAddtionalPrice h3 {
+        color: var(--red);
+        font-size: 16px;
+    }
+    .__InnerAddtionalPrice {
+        margin-left: 10px;
+    }
+    .__pacakgesColumn {
+        min-height: 450px;
+        transition: all 0.5s ease-in-out;
+    }
+}
 
-@media (max-width: 1399.98px) { 
+@media (max-width: 767.98px) {
+    .embla {
+        --slide-size: 95%;
+      }
 
- }
+    .bg-red {
+        display: block !important;
+    }
+
+    .__30_hero .__heroName::before {
+        display: none !important;
+    }
+    .__InnerAddtionalPrice {
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 575.98px) {}

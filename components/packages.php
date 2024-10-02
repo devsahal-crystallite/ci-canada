@@ -33,6 +33,9 @@
                         ],
                         'ctaTxt' => 'Make Appointment',
                         'showAdditionalPrice' => true,  
+                        'discounttitle'=>'',
+                        'discountPrice'=>'$250 CAD',
+                        'discountText'=>'limited time only',
                         'link' => '30-minute-consultation-call',
                     ],
                     [
@@ -48,24 +51,30 @@
                             'Strategy delivery',
                         ],
                         'ctaTxt' => 'Make Appointment',
-                        'showAdditionalPrice' => false, 
+                        'showAdditionalPrice' => true, 
+                        'discounttitle'=>'MOST POPULAR',
+                        'discountPrice'=>'$350 CAD',
+                        'discountText'=>'limited time only',
                         'link' => '1-hour-consultation-call',
                     ],
                 ];
 
                 foreach ($packages as $package) {
                     echo '<div class="col-lg-4 col-md-6 ">';
-                    echo '<div class="__pacakgesColumn d-flex flex-column justify-content-between">';
-                    echo '    <div class="d-flex flex-column align-items-start justify-content-start gap-3">';
-                    echo '<div class="d-flex justify-content-between gap-3">';
-                    echo ' <h4>' . htmlspecialchars($package['price']) . '</h4>';
-
-                    // Conditional rendering for additional price
+                    echo '  <div class="__pacakgesColumn d-flex flex-column justify-content-between">';
+                    echo '    <div class="d-flex flex-column align-items-start justify-content-start gap-2">';
+                    echo '      <div class="d-flex justify-content-between gap-2 __pricing">';
+                    echo '          <div class="w-100"><h4 class="d-block">' . htmlspecialchars($package['price']) . '</h4></div>';
+                
                     if ($package['showAdditionalPrice']) {
-                        echo '<div class="d-flex flex-column justify-content-center gap-2"><strong>$250 CAD</strong></div>';
+                        echo '<div class="__InnerAddtionalPrice">'; 
+                        echo '<h3> ' . htmlspecialchars($package['discounttitle']) . '</h3>';
+                        echo '<del> ' . htmlspecialchars($package['discountPrice']) . '</del>';
+                        echo '<div class="__limitedTime"><p>' . htmlspecialchars($package['discountText']) . '</p></div>';
+                        echo '</div>';
                     }
-
-                    echo '</div>'; // Close the first div of the price
+                
+                    echo '</div>'; 
                     echo '        <span>' . htmlspecialchars($package['title']) . '</span>';
                     echo '        <p>' . htmlspecialchars($package['description']) . '</p>';
                     echo '        <ul>';
@@ -80,8 +89,8 @@
                     echo '<img src="/public/images/red-right.png" alt="" srcset="" width="16" height="16">';
                     echo ' </div>';
                     echo '</a>';
-                    echo '</div>'; // Close the __packagesColumn div
-                    echo '</div>'; // Close the column div
+                    echo '</div>'; 
+                    echo '</div>';
                 }
                 ?>
 

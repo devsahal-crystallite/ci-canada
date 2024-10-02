@@ -29,7 +29,7 @@
                     ],
                 ];
 
-                echo '<div class="row my-5 px-5">';
+                echo '<div class="row my-3 px-5">';
                 foreach ($experiences as $experience) {
                     echo '<div class="col-lg-3 col-md-6 mb-3">';
                     echo '    <div class="d-flex flex-column justify-content-start align-items-lg-start align-items-center __expSection">';

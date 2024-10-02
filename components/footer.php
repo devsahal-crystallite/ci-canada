@@ -1,7 +1,7 @@
 <footer>
     <div class="__footer">
         <div class="container">
-            <nav class="__header">
+            <nav class="__footerInner">
                 <div class="d-flex align-items-center justify-content-between">
                     <img src="/public/images/logo.png" alt="logo" srcset="" class="img-fluid" width="170" height="100">
                     <a href="http://" class="btn __btn bg-red text-white">
@@ -12,6 +12,11 @@
                     </a>
                 </div>
             </nav>
+            <div class="__copyright">
+                <div class="d-flex align-items-center justify-content-center">
+                    <h4>All rights reserved CI Canada 2024</h4>
+                </div>
+            </div>
         </div>
     </div>
 </footer>
